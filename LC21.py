@@ -28,10 +28,7 @@ class Solution:
                 l3.next = l1 
                 l1, l3 = l1.next, l3.next
         
-        if l1:                                  # ---- Exhaust the remaining lists
-            l3.next = l1
-        if l2:
-            l3.next = l2
+        l3.next = l1 or l2                      # ---- Exhaust the remaining lists
         
         l3 = head.next
         del head                                # ---- Delete dummy head
