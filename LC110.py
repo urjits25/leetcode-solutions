@@ -8,12 +8,12 @@ a binary tree in which the left and right subtrees of every node differ in heigh
 
 '''
 
-def height(self, node: TreeNode) -> int:                                        # ---- Max height for the given node
+def height(node: TreeNode) -> int:                                              # ---- Height of node's subtree
     if not node:
         return 0    
     return 1 + max(self.height(node.left), self.height(node.right))
 
-def isBalanced(self, root: TreeNode) -> bool:                                   # ---- Recursive definition
+def isBalanced(root: TreeNode) -> bool:                                         # ---- Recursive definition
     if not root:
         return True
 
