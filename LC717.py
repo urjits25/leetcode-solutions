@@ -9,7 +9,7 @@ The given string will always end with a zero.
 
 '''
 
-def isOneBitCharacter(self, bits: List[int]) -> bool:
+def isOneBitCharacter(bits: List[int]) -> bool:
     if not bits:
         return True
     i = 0
